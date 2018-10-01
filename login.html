@@ -1,383 +1,175 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Picturesque</title>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Crops Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //Custom Theme files -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
-<!-- //js -->	
-<!-- start-smoth-scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
-<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-</script>
-<!--//end-smoth-scrolling-->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 </head>
 <body>
-	<!--header-->
-	<div class="logo">
-		<div class="container">
-			<div class="logo-info">
-				<a href="index.html">
-					<img src="images\photos\logo12.png"/>
-				</a>
-			</div>
-		</div>	
-	</div>
-	<!--//header-->		
-	<!--navigation-->
-	<div class="top-nav">
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
-				</button>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
-					<li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
-					<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Fashion</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Event</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Travel</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Commercial</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Food</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Interior</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Sports</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="category.html">Wedding</a></li>         
-						</ul>
-					</li>	
-					<li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
-					<li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
-					<li class="hvr-bounce-to-bottom"><a href="login.html">Login</a></li>
-				</ul>	
-				<div class="clearfix"> </div>
-			</div>	
-		</nav>		
-	</div>	
-	<!--//navigation-->
-	<!--baner-->
-	<div class="baner">
-		<div class="container">
-			<div class="baner-grids">
-				<div class="col-md-6 baner-top">
-					<figure class="effect-bubba">
-						<img src="images\photos\Fashion\4.jpg" alt=""/>
-						<figcaption>
-							<h4>Fashion</h4>
-						</figcaption>			
-					</figure>	
-				</div>
-				<div class="col-md-6 baner-top">
-					<figure class="effect-bubba">
-						<img src="images\photos\interior\3.jpg" alt=""/>
-						<figcaption>
-							<h4>Interior</h4>
-						</figcaption>			
-					</figure>	
-				</div>
-				<div class="clearfix"> </div>
-				<div class="baner-row">
-					<div class="col-md-4 baner-bottom">
-						<figure class="effect-bubba">
-							<img src="images\photos\event\personal Events\1.jpg" alt=""/>
-							<figcaption>
-								<h4>Event</h4>	
-							</figcaption>			
-						</figure>	
-					</div>
-					<div class="col-md-4 baner-bottom">
-						<figure class="effect-bubba">
-							<img src="images\photos\food\3.jpg" alt=""/>
-							<figcaption>
-								<h4>Food</h4>	
-							</figcaption>			
-						</figure>	
-					</div>
-					<div class="col-md-4 baner-bottom">
-						<figure class="effect-bubba">
-							<img src="images\photos\travell\4.jpg" alt=""/>
-							<figcaption>
-								<h4>Travel</h4>	
-							</figcaption>			
-						</figure>	
-					</div>
-					<div class="clearfix"> </div>
-				</div>				
-			</div>
-		</div>
-	</div>
-	<div class="about-team">		
-		<div class="container">
-			<h3 class="title">Top Photographers</h3>
-			<div class="row team-row">
-				<div class="col-sm-6 col-md-3 team-grids">
-					<div class="thumbnail team-thmnl">
-						<img src="images/download(12).jpg" class="img-responsive zoom-img" alt="...">
-						<div class="caption">
-							<h4>Siddharth Chakravarty</h4>
-							<p>One of the finest growing Fashion Photographer in India.</p>						
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 team-grids">
-					<div class="thumbnail team-thmnl">
-						<img src="images/download(8).jpg" class="img-responsive zoom-img" alt="...">
-						<div class="caption">
-							<h4>Tasneem Khan</h4>
-							<p>One of the pioneers in Women Photographers in India.</p>						
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 team-grids">
-					<div class="thumbnail team-thmnl">
-						<img src="images/download(13).jpg" class="img-responsive zoom-img" alt="...">
-						<div class="caption">
-							<h4>Aman Mishra</h4>
-							<p>Few of the popular names in Event Photography.</p>						
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 team-grids">
-					<div class="thumbnail team-thmnl">
-						<img src="images/download(5).jpg" class="img-responsive zoom-img" alt="...">
-						<div class="caption">
-							<h4>Arjun Pandey</h4>
-							<p>Greatly talented in Travel Photography.</p>						
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!--//baner-->
-	<!-- news -->
-<!--	<div class="news-info">
-		<div class="container">		
-			<h3 class="title">Our News</h3>
-		</div>
-	</div>  -->
-	<!-- container -->
-<!--	<div class="container">				
-		<div class="news">	
-			<div class="news-grids">
-				<div class="col-md-4 news-grid">
-					<div class="news-grid-left news-grid-left-img">
-						<h6>23rd /july</h6>
-					</div>
-					<div class="news-grid-left-info">
-						<h5>Lorem Ipsum is simply dummy</h5>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<div class="news-grid-left news-grid-middle">
-						<h6>5th /Aug</h6>
-					</div>
-					<div class="news-grid-left-info">
-						<h5>Lorem Ipsum is simply dummy</h5>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-				<div class="col-md-4 news-grid">
-					<div class="news-grid-left news-grid-right">
-						<h6>15th /Aug</h6>
-					</div>
-					<div class="news-grid-left-info">
-						<h5>Lorem Ipsum is simply dummy</h5>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div> --><!-- //container -->	
-	</div> 
-	<!-- //news -->
-	<!--main-->
-<!--	<div class="main">
-		<div class="container">
-			<div class="main-grids">
-				<div class="col-md-6 main-left">
-					<img src="images/img6.jpg" alt=""/>
-					<h4>ECO SOLUTIONS</h4>
-					<p>Temporibus autem quibusdam et aut officiis debitis aut
-						rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-					<a href="#" class="more btn btn-1 btn-1b"> Read More</a>
-				</div>
-				<div class="col-md-6 main-right">
-					<div class="col-md-6 main-text">
-						<img src="images/img7.jpg" alt=""/>
-					</div>
-					<div class="col-md-6 main-text">
-						<h4>ECO SOLUTIONS</h4>			
-						<p>Temporibus autem quibusdam et aut officiis debitis aut eveniet ut et voluptates repudiandae rerum necessitatibus saepe quibusdam et aut officiis debitis aut
-							rerum necessitatibus saepe eveniet ut et voluptates repudiandae </p>
-						<a href="#" class="more btn btn-1 btn-1b"> Read More</a>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>			
-		</div>
-	</div>  -->
-	<!--//main-->
-	<!--services-->
-	<div class="services" id="services">
-		<div class="container">
-			<h3 class="title">Testimonals</h3>
-			<div class="service-grids">
-				<div class="col-md-4 srvc-grids-info">
-					<div class="srvc-img">
-						<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-					</div>
-					<h5>Net Geo</h5>
-					<p>Included in 100 most inspiring Travel Photographs. </p>
-				</div>
-				<div class="col-md-4 srvc-grids-info">
-					<div class="srvc-img">
-						<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-					</div>
-					<h5>Forbes List</h5>
-					<p>Listed in Top 250 Photography Studio in India. </p>
-				</div>
-				<div class="col-md-4 srvc-grids-info">
-					<div class="srvc-img">
-						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-					</div>
-					<h5>Critics</h5>
-					<p>Above 4 stars rating in terms of Customer Relationship</p>
-				</div>
-			<!--	<div class="col-md-4 srvc-grids-info">
-					<div class="srvc-img">
-						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-					</div>
-					<h5>Fltrices</h5>
-					<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
-				</div>
-				<div class="col-md-4 srvc-grids-info">
-					<div class="srvc-img">
-						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-					</div>
-					<h5>Processus</h5>
-					<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
-				</div>
-				<div class="col-md-4 srvc-grids-info">
-					<div class="srvc-img">
-						<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-					</div>
-					<h5>Sequitur</h5>
-					<p>Claritas est etiam processus dynaicus qui Mirum est notare quam </p>
-				</div>
-				<div class="clearfix"> </div> -->				
-			</div>
-		</div>
-	</div>
-	<!--//services-->
-	<!-- footer -->
-	<div class="footer">	
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-3 footer-grid">
-					<h3 class="title">Services</h3>
-					<ul>
-						<li>Online Payment</li>
-						<li>Cash On Delivery</li>
-						<li>Hire Photographer</li>
-						<li>Feedback</li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid">
-					<h3 class="title">Information</h3>
-					 <ul>
-						<li><a href="index.html">Top Photographer</a></li>
-						<li><a href="index.html">Testimonals</a></li>
-						<li><a href="about.html">Archives</a></li>
-						<li><a href="about.html">Our Staff</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid">
-					<h3 class="title">More details</h3>
-					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="about.html">Privacy Policy</a></li>
-						<li><a href="about.html">Terms &amp; Conditions</a></li>
-						<li><a href="contact.html">Site Map</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid contact-grid">
-						<h3 class="title">Contact us</h3>
-						<ul>
-							<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>A-21,Devbhumi Nagar</li>							
-							<li class="adrs">D'cabin,Sabarmati,Ahmedabad</li>
-							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91 7878463664</li>
-							<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:example@mail.com">picturesque@gmail.com</a></li>
-						</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="copy">
-		<div class="container">
-			<div class="copy-left">
-				<p>Copyright © 2018 Picturesque.</p>
-			</div>
-			<div class="social-icons">
-				<ul>
-					<li><a href="#" class="fb"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#" class="gg"></a></li>
-					<li><a href="#" class="pn"></a></li>					
-				</ul>	
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!--//footer-->
-	<!--smooth-scrolling-of-move-up-->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!--//smooth-scrolling-of-move-up-->
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>
