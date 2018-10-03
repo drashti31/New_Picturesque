@@ -40,6 +40,25 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
+/* ----Photographer Grid--- */
+
+.photographer-grid {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.grid-border {
+    border:1px solid black;
+    margin-top:0;
+    padding:0;
+}
+
+.container-grid {
+    margin-top: 3.5%;
+}
+.btn-grid {
+    margin-top:0;
+}
+
 /*--header--*/
 .logo {
     padding: 0.8em 0 3em;
