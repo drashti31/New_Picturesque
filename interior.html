@@ -10,12 +10,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Picturesque</title>
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/lightbox.css">
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Crops Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -140,18 +140,31 @@ span.psw {
     }
 }
 </style>
-	
+
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //Custom Theme files -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script> 
 <!-- //js -->	
+<!-- start-smoth-scrolling-->
+<!-- <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script> -->
+<!--//end-smoth-scrolling -->
 </head>
 <body>
 	<!--header-->
-<div class="logo">
-		<div class="login-button">
-			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+	<div class="logo">
+			<div class="login-button">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 <div id="id01" class="modal">
   
@@ -190,14 +203,11 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-</div>
+			</div>
 		</div>
-	
-	<div class="logo">
 		<div class="container">
 			<div class="logo-info">
-				<image src="images\photos\sample2.jpg"/> 
+					<image src="images\photos\sample2.jpg"/> 
 			</div>
 		</div>	
 	</div>
@@ -214,16 +224,16 @@ window.onclick = function(event) {
 				<ul class="nav navbar-nav">
 					<li class="hvr-bounce-to-bottom"><a href="index.html">Home</a></li>
 					<li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
-					<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+					<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a class="hvr-bounce-to-bottom" href="fashion.html">Fashion</a></li>
 							<li><a class="hvr-bounce-to-bottom" href="event.html">Event</a></li>
 							<li><a class="hvr-bounce-to-bottom" href="travel.html">Travel</a></li>
 							<li><a class="hvr-bounce-to-bottom" href="commerical.html">Commercial</a></li>
 							<li><a class="hvr-bounce-to-bottom" href="food.html">Food</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="interior.html">Interior</a></li>
+							<li><a class="hvr-bounce-to-bottom active" href="interior.html">Interior</a></li>
 							<li><a class="hvr-bounce-to-bottom" href="sports.html">Sports</a></li>
-							<li><a class="hvr-bounce-to-bottom" href="wedding.html">Wedding</a></li>                
+							<li><a class="hvr-bounce-to-bottom" href="wedding.html">Wedding</a></li>               
 						</ul>
 					</li>	
 					<li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
@@ -239,10 +249,10 @@ window.onclick = function(event) {
 		<div class="container">
 			<div class="baner-grids">
 				<div class="col-md-6 baner-top">
-					<img src="images/img16.jpg" alt=""/>
+					<img src="images\photos\p5.jpg" alt=""/>
 				</div>
 				<div class="col-md-6 baner-top">
-					<img src="images/img17.jpg" alt=""/>
+					<img src="images\photos\p2.jpg" alt=""/>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
