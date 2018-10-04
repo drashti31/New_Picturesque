@@ -8,7 +8,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Picturesque</title>
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all"> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+
+	<!-- Optional theme -->
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="css/lightbox.css">
 <!-- Custom Theme files -->
@@ -21,6 +29,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
+.border{
+			border:1px solid black;
+		}
+		.mt{
+			margin-top: 10px;
+		}
+		.p-img{
+			padding-top: 4px;
+			padding-right: 5px;
+		}
+		.p-text{
+			padding: 4px;
+		}
+		.p-btn{
+			top: 5px;
+		}
+		.ptr{
+			cursor: pointer;
+		}
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -75,7 +102,7 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
+.login-Modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -154,7 +181,7 @@ span.psw {
 		<div class="login-button">
 			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-<div id="id01" class="modal">
+<div id="id01" class="login-Modal">
   
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
@@ -182,12 +209,12 @@ span.psw {
   </form>
 <script>
 // Get the modal
-var modal = document.getElementById('id01');
+var loginModal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
     }
 }
 </script>
@@ -198,9 +225,7 @@ window.onclick = function(event) {
 	<div class="logo">
 		<div class="container">
 			<div class="logo-info">
-				<a href="index.html">
-					<img src="images\photos\logo12.png"/>
-				</a>
+				<image src="images\photos\sample2.jpg"/> 
 			</div>
 		</div>	
 	</div>
@@ -252,7 +277,102 @@ window.onclick = function(event) {
 		</div>
 	</div>
 	<!--//baner-->
-	<div class="photographer-grid">
+
+	<div class="container-fluid">
+			<div class="container">
+				<div class="row mt border">
+					<div class="col-xs-4 col-sm-2 col-md-2  p-img ">
+						<a data-toggle="modal" data-target="#myModal" class="ptr" ><img src="#" /></a>				
+					</div>
+					<div class="col-xs-4 col-sm-8 col-md-8  p-text">
+						<p>Text Will GO Here </p>
+						<p>Text Will GO Here </p>
+	
+						
+					</div>
+					<div class="col-xs-4  col-sm-2 col-md-2  text-center p-btn ">
+						<button class="btn btn-primary ">
+							Add
+						</button>						
+					</div>
+				</div>
+			</div>	
+		</div>	
+	
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  </div>
+			  <div class="modal-body">
+				<div class="row p-img text-center">
+					<div class="col-xs-4">
+						<img src="scouval.png">
+					</div>
+					<div class="col-xs-4">
+						<img src="scouval.png">
+					</div>
+					<div class="col-xs-4">
+						<img src="scouval.png">
+					</div>
+					<div class="col-xs-4 mt">
+						<img src="scouval.png">
+					</div>
+					<div class="col-xs-4 mt">
+						<img src="scouval.png">
+					</div>
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row mt border">
+					<div class="col-xs-4 col-sm-2 col-md-2  p-img ">
+						<a data-toggle="modal" data-target="#myModal" class="ptr" ><img src="#" /></a>
+					</div>
+					<div class="col-xs-4 col-sm-8 col-md-8  p-text ">
+						<p>Text Will GO Here </p>
+								<p>Text Will GO Here </p>
+					
+					</div>
+					<div class="col-xs-4  col-sm-2 col-md-2  text-center p-btn ">
+						<button class="btn btn-primary">
+							Add
+						</button>						
+					</div>
+				</div>
+			</div>	
+		</div>	
+	
+	<!-- Latest compiled and minified JavaScript -->
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		function alignModal(){
+			var modalDialog = $(this).find(".modal-dialog");
+			
+			// Applying the top margin on modal dialog to align it vertically center
+			modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+		}
+		// Align modal when it is displayed
+		$(".modal").on("shown.bs.modal", alignModal);
+		
+		// Align modal when user resize the window
+		$(window).on("resize", function(){
+			$(".modal:visible").each(alignModal);
+		});   
+	});
+	</script>
+
+	<!-- <div class="photographer-grid">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="row mt-2">
@@ -288,7 +408,7 @@ window.onclick = function(event) {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 		<!-- footer -->
 	<div class="footer">	
@@ -384,6 +504,9 @@ window.onclick = function(event) {
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </body>
 </html>
